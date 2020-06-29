@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CoCoffe</title>
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>ScriptFeet</title>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1674/1674712.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -15,12 +15,12 @@
 <body>
     <header>
       <nav>
-            <a href="" type="button" class="btn btn-outline-warning">Inicio</a>
-            <a href=""></a>
+            <!--<a href=""></a>
+            <a href=""></a>-->
         </nav>
         <section class="textos-header">
-            <h1>CoCoffe</h1>
-            <h2>Pedidos obtenidos con anterioridad</h2>
+            <h1>ScriptFeet</h1>
+            <h2>Descarga el ejecutable que desees rapido y facil</h2>
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -32,77 +32,95 @@
         <section class="contenedor sobre-nosotros">
             <h2 class="titulo">Informacion</h2>
             <div class="contenedor-sobre-nosotros">
-                <img src="https://images.unsplash.com/photo-1441109296207-fd911f7cd5e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1371&q=80" alt="" class="imagen-about-us">
+                <img src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="imagen-about-us">
                 <div class="contenido-textos">
-                    <form action="" method="GET">
-                        <h3><span>1</span>Sobre lo que has pedido:</h3>
+                        <h3><span>1</span>Que es ScriptFeet:</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus nemo, inventore ab voluptatem nobis
                             reiciendis? Reiciendis architecto perferendis veniam perspiciatis pariatur quam dolores,
                             ratione quo, nesciunt delectus laudantium alias minima!</p>
-                        <h3><span>2</span>Mas opciones</h3>
-                        <div class="form-group">
-                            <label for="product_select" class="form-label">Seleccione la mesa en la que se encuentra:</label>
-                            
-                                <select class="form-control list" id="product_select" name="product_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="full-name">Nombre Completo</label>
-                            <input type="text" class="form-control" id="full-name" placeholder="Escriba su Nombre Completo" required>
-                          </div>
-                        <input type="submit" value="Continuar" class="button-submit">
-                    </form>
                 </div>
             </div>
         </section>
     </main>
        <section class="portafolio">
             <div class="contenedor">
-                <h2 class="titulo">Reservas</h2>
+                <h2 class="titulo">Descargables</h2>
                 <div class="galeria-port">
 
+                    <!--Image with model-->
                     <div class="imagen-port">
-                        <img src="https://images.unsplash.com/photo-1506193029-6cb2e0c90e36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
+                        <img src="https://www.solucionex.com/sites/default/files/posts/imagen/php.jpg" alt="">
                         <div class="hover-galeria">
                             <img src="img/seleccion.png" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta rem ratione voluptatum officia veniam, similique amet cupiditate quis quae nemo est reprehenderit suscipit, exercitationem voluptates. Nulla sed minima velit saepe!</p>
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#php-selection">
+                                Descargable de PHP
+                            </button>
+
 
                         </div>
                     </div>
 
+                    <div class="modal fade" id="php-selection" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">PHP</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Seleccion la version de Php que desees</strong></p>
+                                <button type="button" class="btn btn-outline-info">Version</button>
+                                <button type="button" class="btn btn-outline-info">Version</button>
+                                <button type="button" class="btn btn-outline-info">Version</button>
+                                <button type="button" class="btn btn-outline-info">Version</button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!--End image with model-->
+
                     <div class="imagen-port">
-                        <img src="https://images.unsplash.com/photo-1506193029-6cb2e0c90e36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
+                        <img src="https://ploshadka.net/wp-content/uploads/logo/js.png" alt="">
                         <div class="hover-galeria">
                             <img src="img/seleccion.png" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta rem ratione voluptatum officia veniam, similique amet cupiditate quis quae nemo est reprehenderit suscipit, exercitationem voluptates. Nulla sed minima velit saepe!</p>
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#js-selection">
+                                Descargable de JS
+                            </button>
+                            
 
                         </div>
                     </div>
-
-                    <div class="imagen-port">
-                        <img src="https://images.unsplash.com/photo-1506193029-6cb2e0c90e36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/seleccion.png" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta rem ratione voluptatum officia veniam, similique amet cupiditate quis quae nemo est reprehenderit suscipit, exercitationem voluptates. Nulla sed minima velit saepe!</p>
-
+                    <div class="modal fade" id="js-selection" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Java Script</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Selecciona la version de Java Script que desees</strong></p>
+                                <button type="button" class="btn btn-outline-warning">Version</button>
+                                <button type="button" class="btn btn-outline-warning">Version</button>
+                                <button type="button" class="btn btn-outline-warning">Version</button>
+                                <button type="button" class="btn btn-outline-warning">Version</button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
                         </div>
                     </div>
 
-                    <div class="imagen-port">
-                        <img src="https://images.unsplash.com/photo-1506193029-6cb2e0c90e36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/seleccion.png" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta rem ratione voluptatum officia veniam, similique amet cupiditate quis quae nemo est reprehenderit suscipit, exercitationem voluptates. Nulla sed minima velit saepe!</p>
-
-                        </div>
-                    </div>
-
+                    
                 </div>
             </div>
         </section>
@@ -132,5 +150,10 @@
     </main>
    
 </body>
+<footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</footer>
 
 </html>
